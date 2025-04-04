@@ -1,0 +1,41 @@
+{
+  "name": "mcp-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/susumutomita/mcp-server.git"
+  },
+  "author": "Susumu Tomita <your.email@example.com> (http://yourwebsite.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/susumutomita/mcp-server/issues"
+  },
+  "type": "module",
+  "bin": {
+    "mcp-server": "build/index.ts"
+  },
+  "files": [
+    "build"
+  ],
+  "homepage": "https://github.com/susumutomita/mcp-server#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "@mozilla/readability": "^0.6.0",
+    "html-to-md": "^0.8.7",
+    "jsdom": "^26.0.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^22.14.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.1.1"
+  }
+}
